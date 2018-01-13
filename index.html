@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+    
+        /* Document
+                                                   ========================================================================== */
+    
+        /**
+                                                 * 1. Correct the line height in all browsers.
+                                                 * 2. Prevent adjustments of font size after orientation changes in
+                                                 *    IE on Windows Phone and in iOS.
+                                                 */
+    
+        html {
+            line-height: 1.15;
+            /* 1 */
+            -ms-text-size-adjust: 100%;
+            /* 2 */
+            -webkit-text-size-adjust: 100%;
+            /* 2 */
+        }
+    
+        /* Sections
+                                                   ========================================================================== */
+    
+        /**
+                                                 * Remove the margin in all browsers (opinionated).
+                                                 */
+    
+        body {
+            margin: 0;
+        }
+    
+        /**
+                                                 * Add the correct display in IE 9-.
+                                                 */
+    
+        article,
+        aside,
+        footer,
+        header,
+        nav,
+        section {
+            display: block;
+        }
+    
+        /**
+                                                 * Correct the font size and margin on `h1` elements within `section` and
+                                                 * `article` contexts in Chrome, Firefox, and Safari.
+                                                 */
+    
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+    
+        /* Grouping content
+                                                   ========================================================================== */
+    
+        /**
+                                                 * Add the correct display in IE 9-.
+                                                 * 1. Add the correct display in IE.
+                                                 */
+    
+        figcaption,
+        figure,
+        main {
+            /* 1 */
+            display: block;
+        }
+    
+        /**
+                                                 * Add the correct margin in IE 8.
+                                                 */
+    
+        figure {
+            margin: 1em 40px;
+        }
+    
+        /**
+                                                 * 1. Add the correct box sizing in Firefox.
+                                                 * 2. Show the overflow in Edge and IE.
+                                                 */
+    
+        hr {
+            box-sizing: content-box;
+            /* 1 */
+            height: 0;
+            /* 1 */
+            overflow: visible;
+            /* 2 */
+        }
+    
+        /**
+                                                 * 1. Correct the inheritance and scaling of font size in all browsers.
+                                                 * 2. Correct the odd `em` font sizing in all browsers.
+                                                 */
+    
+        pre {
+            font-family: monospace, monospace;
+            /* 1 */
+            font-size: 1em;
+            /* 2 */
+        }
+    
+        /* Text-level semantics
+                                                   ========================================================================== */
+    
+        /**
+                                                 * 1. Remove the gray background on active links in IE 10.
+                                                 * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+                                                 */
+    
+        a {
+            background-color: transparent;
+            /* 1 */
+            -webkit-text-decoration-skip: objects;
+            /* 2 */
+        }
+    
+        /**
+                                                 * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+                                                 * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+                                                 */
+    
+        abbr[title] {
+            border-bottom: none;
+            /* 1 */
+            text-decoration: underline;
+            /* 2 */
+            text-decoration: underline dotted;
+            /* 2 */
+        }
+    
+        /**
+                                                 * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+                                                 */
+    
+        b,
+        strong {
+            font-weight: inherit;
+        }
+    
+        /**
+                                                 * Add the correct font weight in Chrome, Edge, and Safari.
+                                                 */
+    
+        b,
+        strong {
+            font-weight: bolder;
+        }
+    
+        /**
+                                                 * 1. Correct the inheritance and scaling of font size in all browsers.
+                                                 * 2. Correct the odd `em` font sizing in all browsers.
+                                                 */
+    
+        code,
+        kbd,
+        samp {
+            font-family: monospace, monospace;
+            /* 1 */
+            font-size: 1em;
+            /* 2 */
+        }
+    
+        /**
+                                                 * Add the correct font style in Android 4.3-.
+                                                 */
+    
+        dfn {
+            font-style: italic;
+        }
+    
+        /**
+                                                 * Add the correct background and color in IE 9-.
+                                                 */
+    
+        mark {
+            background-color: #ff0;
+            color: #000;
+        }
+    
+        /**
+                                                 * Add the correct font size in all browsers.
+                                                 */
+    
+        small {
+            font-size: 80%;
+        }
+    
+        /**
+                                                 * Prevent `sub` and `sup` elements from affecting the line height in
+                                                 * all browsers.
+                                                 */
+    
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+    
+        sub {
+            bottom: -0.25em;
+        }
+    
+        sup {
+            top: -0.5em;
+        }
+    
+        /* Embedded content
+                                                   ========================================================================== */
+    
+        /**
+                                                 * Add the correct display in IE 9-.
+                                                 */
+    
+        audio,
+        video {
+            display: inline-block;
+        }
+    
+        /**
+                                                 * Add the correct display in iOS 4-7.
+                                                 */
+    
+        audio:not([controls]) {
+            display: none;
+            height: 0;
+        }
+    
+        /**
+                                                 * Remove the border on images inside links in IE 10-.
+                                                 */
+    
+        img {
+            border-style: none;
+        }
+    
+        /**
+                                                 * Hide the overflow in IE.
+                                                 */
+    
+        svg:not(:root) {
+            overflow: hidden;
+        }
+    
+        /* Forms
+                                                   ========================================================================== */
+    
+        /**
+                                                 * 1. Change the font styles in all browsers (opinionated).
+                                                 * 2. Remove the margin in Firefox and Safari.
+                                                 */
+    
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: sans-serif;
+            /* 1 */
+            font-size: 100%;
+            /* 1 */
+            line-height: 1.15;
+            /* 1 */
+            margin: 0;
+            /* 2 */
+        }
+    
+        /**
+                                                 * Show the overflow in IE.
+                                                 * 1. Show the overflow in Edge.
+                                                 */
+    
+        button,
+        input {
+            /* 1 */
+            overflow: visible;
+        }
+    
+        /**
+                                                 * Remove the inheritance of text transform in Edge, Firefox, and IE.
+                                                 * 1. Remove the inheritance of text transform in Firefox.
+                                                 */
+    
+        button,
+        select {
+            /* 1 */
+            text-transform: none;
+        }
+    
+        /**
+                                                 * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+                                                 *    controls in Android 4.
+                                                 * 2. Correct the inability to style clickable types in iOS and Safari.
+                                                 */
+    
+        button,
+        html [type="button"],
+        /* 1 */
+    
+        [type="reset"],
+        [type="submit"] {
+            -webkit-appearance: button;
+            /* 2 */
+        }
+    
+        /**
+                                                 * Remove the inner border and padding in Firefox.
+                                                 */
+    
+        button::-moz-focus-inner,
+        [type="button"]::-moz-focus-inner,
+        [type="reset"]::-moz-focus-inner,
+        [type="submit"]::-moz-focus-inner {
+            border-style: none;
+            padding: 0;
+        }
+    
+        /**
+                                                 * Restore the focus styles unset by the previous rule.
+                                                 */
+    
+        button:-moz-focusring,
+        [type="button"]:-moz-focusring,
+        [type="reset"]:-moz-focusring,
+        [type="submit"]:-moz-focusring {
+            outline: 1px dotted ButtonText;
+        }
+    
+        /**
+                                                 * Correct the padding in Firefox.
+                                                 */
+    
+        fieldset {
+            padding: 0.35em 0.75em 0.625em;
+        }
+    
+        /**
+                                                 * 1. Correct the text wrapping in Edge and IE.
+                                                 * 2. Correct the color inheritance from `fieldset` elements in IE.
+                                                 * 3. Remove the padding so developers are not caught out when they zero out
+                                                 *    `fieldset` elements in all browsers.
+                                                 */
+    
+        legend {
+            box-sizing: border-box;
+            /* 1 */
+            color: inherit;
+            /* 2 */
+            display: table;
+            /* 1 */
+            max-width: 100%;
+            /* 1 */
+            padding: 0;
+            /* 3 */
+            white-space: normal;
+            /* 1 */
+        }
+    
+        /**
+                                                 * 1. Add the correct display in IE 9-.
+                                                 * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+                                                 */
+    
+        progress {
+            display: inline-block;
+            /* 1 */
+            vertical-align: baseline;
+            /* 2 */
+        }
+    
+        /**
+                                                 * Remove the default vertical scrollbar in IE.
+                                                 */
+    
+        textarea {
+            overflow: auto;
+        }
+    
+        /**
+                                                 * 1. Add the correct box sizing in IE 10-.
+                                                 * 2. Remove the padding in IE 10-.
+                                                 */
+    
+        [type="checkbox"],
+        [type="radio"] {
+            box-sizing: border-box;
+            /* 1 */
+            padding: 0;
+            /* 2 */
+        }
+    
+        /**
+                                                 * Correct the cursor style of increment and decrement buttons in Chrome.
+                                                 */
+    
+        [type="number"]::-webkit-inner-spin-button,
+        [type="number"]::-webkit-outer-spin-button {
+            height: auto;
+        }
+    
+        /**
+                                                 * 1. Correct the odd appearance in Chrome and Safari.
+                                                 * 2. Correct the outline style in Safari.
+                                                 */
+    
+        [type="search"] {
+            -webkit-appearance: textfield;
+            /* 1 */
+            outline-offset: -2px;
+            /* 2 */
+        }
+    
+        /**
+                                                 * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+                                                 */
+    
+        [type="search"]::-webkit-search-cancel-button,
+        [type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+    
+        /**
+                                                 * 1. Correct the inability to style clickable types in iOS and Safari.
+                                                 * 2. Change font properties to `inherit` in Safari.
+                                                 */
+    
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            /* 1 */
+            font: inherit;
+            /* 2 */
+        }
+    
+        /* Interactive
+                                                   ========================================================================== */
+    
+        /*
+                                                 * Add the correct display in IE 9-.
+                                                 * 1. Add the correct display in Edge, IE, and Firefox.
+                                                 */
+    
+        details,
+        /* 1 */
+    
+        menu {
+            display: block;
+        }
+    
+        /*
+                                                 * Add the correct display in all browsers.
+                                                 */
+    
+        summary {
+            display: list-item;
+        }
+    
+        /* Scripting
+                                                   ========================================================================== */
+    
+        /**
+                                                 * Add the correct display in IE 9-.
+                                                 */
+    
+        canvas {
+            display: inline-block;
+        }
+    
+        /**
+                                                 * Add the correct display in IE.
+                                                 */
+    
+        template {
+            display: none;
+        }
+    
+        /* Hidden
+                                                   ========================================================================== */
+    
+        /**
+                                                 * Add the correct display in IE 10-.
+                                                 */
+    
+        [hidden] {
+            display: none;
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: LeagueGothic-Regular;
+            /* Имя шрифта */
+            src: url(league-gothic/LeagueGothic-Regular.otf);
+            /* Путь к файлу со шрифтом */
+        }
+        @font-face {
+            font-family: Arial;
+            /* Имя шрифта */
+            src: url(font/arial.ttf);
+            /* Путь к файлу со шрифтом */
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POZNAN</title>
+    <link rel="stylesheet" href="poznan.css">
+</head>
+<body>
+    <div class="header__wrapper">
+        <div class="header">
+            <div class="header__top">
+                <div class="header__top_logo">POZ<span>NAN</span> - CITY<span>2</span>LIVE</div>
+                <!--
+                <div class="header__top_social">
+                    <div class="header__top_social-icon"><a href="#"><img src="evernote.png" alt="" width="15" height="16"></a></div>
+                    <div class="header__top_social-icon"><a href="#"><img src="twitter.png" alt="" width="16" height="15"></a></div>
+                    <div class="header__top_social-icon"><a href="#"><img src="pinterest.png" alt="" width="16" height="16"></a></div>
+                    <div class="header__top_social-icon"><a href="#"><img src="liken.png" alt="" width="16" height="16"></a></div>
+                    <div class="header__top_social-icon"><a href="#"><img src="facebook.png" alt="" width="16" height="16"></a></div>
+                    <div class="header__top_social-icon"><a href="#"><img src="delicious.png" alt="" width="16" height="16"></a></div>
+                    
+                </div>
+                -->
+            </div>
+            <div class="header__menu">
+                <div class="header__menu_item"><a href="#">HOME</a></div>
+                <div class="header__menu_item"><a href="#">PRODUCT</a></div>
+                <div class="header__menu_item"><a href="#">SERVICES</a></div>
+                <div class="header__menu_item"><a href="#">CONTACT</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="visit__wrapper">
+        <div class="visit">
+            <div class="visit__claim">
+                <div class="visit__claim_caption">VISIT POZ<span>NAN</span></div>
+                <div class="visit__claim_info">A CITY ON THE <span>WARATA</span> RIVER IN WEST - CENTRAL <span>POLAND</span>, THE REGION CALLED <span>GREATER POLAND</span></div>
+            </div>
+            <div class="visit__people">
+                <div class="visit__people_person">
+                    <div class="visit__people_person-photo1"></div>
+                    <div class="visit__people_person-comment">
+                        <div class="visit__people_person-comment-about">I was in Poznan once. The arhitecture<br> is really awesome.</div>
+                        <div class="visit__people_person-comment-name">Joe Wisdom, architect</div>
+                    </div>
+                </div>
+                <div class="visit__people_person">
+                    <div class="visit__people_person-photo2"></div>
+                    <div class="visit__people_person-comment">
+                        <div class="visit__people_person-comment-about">I was lost in Poznan for 3 days.<br> I was terrified</div>
+                        <div class="visit__people_person-comment-name">Little Box, child</div>
+                    </div>
+                </div>
+                <div class="visit__people_person">
+                        <div class="visit__people_person-photo3">
+                            
+                        </div>
+                    <div class="visit__people_person-comment">
+                        <div class="visit__people_person-comment-about">People used to<br> look at me now<br> they don't see me</div>
+                        <div class="visit__people_person-comment-name">Eva Doe, exmodel</div>
+                    </div>
+                </div>
+                <div class="visit__people_person">
+                    <div class="visit__people_person-photo4">
+                        
+                    </div>
+                    <div class="visit__people_person-comment4">
+                        <div class="visit__people_person-comment-about">I have a lot of penfrinds in Poznan. I like <br> written them and...</div>
+                        <div class="visit__people_person-comment-name">Emmma Smith, child</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__wrapper">
+        <div class="main">
+            <div class="main__left">
+                <div class="main__left_author">
+                    <div class="main__left_author-name">ABOUT AUTHOR</div>
+                    <div class="main__left_author-text"><span>Jonh Doe</span> - iasus vel auqua iareet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velt aliquet. Vestibulm id liqula porta</div>
+                </div>
+                <div class="main__left_related">
+                    <div class="main__left_related-name">RELATED POSTS</div>
+                    <div class="main__left_related-post">
+                        <div class="main__left_related-post-image"><img src="image1.png" alt="" width="50" height="40"></div>
+                        <div class="main__left_related-post-text">
+                            <div class="main__left_related-post-text-caption">POZNAN AT NIGHT</div>
+                            <div class="main__left_related-post-text-about">
+                                <img src="message.png" alt="" width="16" height="16">
+                                <div class="main__left_related-post-text-about-quantity">10 Comment</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__left_related-post">
+                        <div class="main__left_related-post-image"><img src="image2.png" alt="" width="50" height="40"></div>
+                        <div class="main__left_related-post-text">
+                            <div class="main__left_related-post-text-caption">PEOPLE TO MEET</div>
+                            <div class="main__left_related-post-text-about">
+                                <img src="message.png" alt="" width="16" height="16">
+                                <div class="main__left_related-post-text-about-quantity">21 Comment</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__left_related-post">
+                        <div class="main__left_related-post-image"><img src="image3.png" alt="" width="50" height="40"></div>
+                        <div class="main__left_related-post-text">
+                            <div class="main__left_related-post-text-caption">VISIT OUR OFFICE</div>
+                            <div class="main__left_related-post-text-about">
+                                <img src="message.png" alt="" width="16" height="16">
+                                <div class="main__left_related-post-text-about-quantity">17 Comment</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__left_stoke">
+                    <div class="main__left_stoke-name">CURRENCY</div>
+                    <table class="main__left_stoke-table">
+                        <tr> 
+                            <th>Date</th>
+                            <th>Value</th>
+                            <th>Status</th>
+                            <th>Diff</th>
+                        </tr>
+                        <tr> 
+                            <td>22.1</td>
+                            <td>459.5</td>
+                            <td><img src="arrow.png" alt="" width="14" height="10" ></td>
+                            <td>+1.0</td>
+                        </tr>
+                         <tr> 
+                            <td>21.1</td>
+                            <td>448.5</td>
+                            <td><img src="arrow2.png" alt="" width="14" height="10" ></td>
+                            <td>-2.3</td>
+                        </tr>
+                         <tr> 
+                            <td>20.1</td>
+                            <td>450.8</td>
+                            <td><img src="arrow3.png" alt="" width="14" height="10" ></td>
+                            <td>+8.0</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="main__center">
+                <div class="main__center_bigpost">
+                    <div class="main__center_bigpost-caption">WHY SHOULD YOU COME TO POZNAN</div>
+                    <div class="main__center_bigpost-list">
+                        <div class="main__center_bigpost-list-image1">
+                            <div class="main__center_bigpost-list-image1-pr">11 Nov<br>2013</div>
+                        </div>
+                        <div class="main__center_bigpost-list-image2">
+                            <div class="main__center_bigpost-list-image1-pr">by<br>John Doe</div>
+                        </div>
+                        <div class="main__center_bigpost-list-about">
+                            <div class="main__center_bigpost-list-about-text">Donec sed odio dui. Duis molis, est non comitiodo luctus, nisi erat portitor ligula, eget lacinia odio em nec elit. Sed posuere consectetur est at lobortis. Nula vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla...</div>
+                            <div class="main__center_bigpost-list-about-other">
+                                <div><input type="button" value="read more" class="main__center_bigpost-list-about-other-button"></div>
+                                <div class="main__center_bigpost-list-about-other-meta">
+                                    <a href="#"><img src="likes.png" alt="" srcset="" width="16" height="15"></a>
+                                    <div class="main__center_bigpost-list-about-other-meta-item">10 likes</div>
+                                    <a href="#"><img src="message2.png" alt="" srcset=""  width="16" height="16"></a>
+                                    <div class="main__center_bigpost-list-about-other-meta-item">22 comments</div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="main__center_post">
+                    <div class="main__center_post_smallpost">
+                        <div class="main__center_post_smallpost-top">
+                            <div class="main__center_post_smallpost-top-caption">NEW ATTRACTIONS</div>
+                            <div class="main__center_post_smallpost-top-date">Posted by
+                                <span>John Doe</span> on
+                                <span>10 Nov 2013</span>
+                            </div>
+                            <div class="main__center_post_smallpost-top-text">Donec sed odio. Duis molis, est non commodo luctus, nisi erat porttitor ligula, egel lacinia odio sem nec elit. Sed
+                                posuere consectetur est at lobortis.</div>
+                            <div class="main__center_post_smallpost-top-another">more...</div>
+                        </div>
+                        <div class="main__center_post_smallpost-bottom">
+                            <div class="main__center_post_smallpost-bottom-likes">
+                                <div class="main__center_post_smallpost-bottom-likes-image"></div>
+                                <div class="main__center_post_smallpost-bottom-likes-item">12</div>
+                            </div>
+                            <div class="main__center_post_smallpost-bottom-message">
+                                <div class="main__center_post_smallpost-bottom-message-image"></div>
+                                <div class="main__center_post_smallpost-bottom-message-item">34</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__center_post_smallpost2">
+                        <div class="main__center_post_smallpost2-top">
+                            <div class="main__center_post_smallpost2-top-caption">LET'S MEET ON OLD MARKET SQUARE<br>IT WILL BE FUN</div>
+                            <div class="main__center_post_smallpost2-top-date">Posted by
+                                <span>John Doe</span> on
+                                <span>09 Nov 2013</span>
+                            </div>
+                            <div class="main__center_post_smallpost2-top-text">Donec sed odio dui. Duis molis, est non commodo luctus, nisi erat porttitor ligula, egel lacinia odio sem nec elit. Sed
+                                posuere consectetur est at lobortis. Eget lacinia odio sen nec elit. Sed posuere consectetur est at lobortis eget lacinia...</div>
+                            <div class="main__center_post_smallpost2-top-another">more...</div>
+                        </div>
+                        <div class="main__center_post_smallpost2-bottom">
+                            <div class="main__center_post_smallpost2-bottom-likes">
+                                <div class="main__center_post_smallpost2-bottom-likes-image"></div>
+                                <div class="main__center_post_smallpost2-bottom-likes-item">56</div>
+                            </div>
+                            <div class="main__center_post_smallpost2-bottom-message">
+                                <div class="main__center_post_smallpost2-bottom-message-image"></div>
+                                <div class="main__center_post_smallpost2-bottom-message-item">55</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__center_post_component">
+                        <div class="main__center_post_component-text">
+                        your ad heres
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="information__wrapper">
+        <div class="information">
+            WHERE CAN I FIND MORE INFORMATION
+        </div>
+    </div>
+    <div class="map__wrapper" id="map">
+        <div class="map" >
+
+        </div>
+    </div>
+    <div class="footer__wrapper">
+        <div class="footer">
+            <div class="footer__top">
+                <div class="footer__top_logo">POZ<span>NAN</span> - CITY<span>2</span>LIVE</div>
+                <div class="footer__top_menu">
+                    <div class="footer__top_menu-item"><a href="#">HOME</a></div>
+                    <div class="footer__top_menu-item"><a href="#">PRODUCT</a></div>
+                    <div class="footer__top_menu-item"><a href="#">SERVICES</a></div>
+                    <div class="footer__top_menu-item"><a href="#">CONTACT</a></div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                ALL RIGHTS RESERVED 2013
+            </div>
+        </div>
+    </div>
+    <script>
+        function initMap() {
+            var uluru = { lat: 52.427226, lng: 16.937442 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPo6D51wUx2ebNJ_8nF-2BekHe2FDkLIg&callback=initMap">
+    </script>
+</body>
+</html>  

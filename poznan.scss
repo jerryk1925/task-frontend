@@ -1,0 +1,792 @@
+.header{
+   
+    margin: 0 auto;
+    min-height: 90px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    &__wrapper{
+       
+        width: 100%;
+        min-height: 90px;
+        border-bottom: 2px solid rgb(34, 170, 236);
+    }
+    &__top{
+        
+        display: inline-block;
+        &_logo{
+            display: inline-block;
+        font-family: LeagueGothic-Regular;
+        font-size: 32px; 
+        color: rgb(7, 110, 159);    
+        }
+        &_logo span{
+        color: rgb(34, 170, 236);
+        }
+        &_social{
+           
+            margin-left: 261px;
+            display: inline-block;
+            &-icon{
+                display: inline-block;
+                padding: 0 3.5px;
+                
+            }
+        }
+    }
+    &__menu{
+        margin-top: 18px ;
+        display: inline-block;
+        
+        &_item{
+            margin: 0 18px;
+            display: inline-block; 
+            min-width: 62px;
+            line-height: 16px;
+            
+            text-align: center;
+            vertical-align: middle;
+            
+           
+        }
+        &_item a {
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 10px;
+            font-family: "Arial";
+            color: rgb(112, 112, 112);
+            text-transform: uppercase; 
+            
+        }
+        &_item:hover{
+            box-shadow: 0 1px 0 0 rgb(70, 155, 191) inset;
+            background: rgb(7, 106, 155);
+            border: 1px solid rgb(4, 82, 121);
+        }
+        &_item:hover a{
+            color: white;
+        }
+    }
+}
+
+.visit{
+    margin: 0 auto;
+    min-height: 435px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        min-height: 435px;
+        width: 100%;
+        background: url('main.jpg') no-repeat;
+        background-position: center;
+        border-bottom: 2px solid #22aaec;
+        
+    }
+    &__claim{
+        min-height: 150px;
+        text-align: center;
+        
+        &_caption{
+            margin: auto;
+            font-family: LeagueGothic-Regular;
+            font-size: 60px;
+                
+                color: rgb(7, 110, 159);
+                text-transform: uppercase; 
+                width: 285px;
+                line-height: 79px;
+                background: rgba(255, 255, 255, 0.8);
+                vertical-align: middle;
+        }
+        &_caption span{
+            color: rgb(34, 170, 236);
+        }
+        &_info{
+            margin-top: 19px;
+            
+            font-family: LeagueGothic-Regular;
+           
+            font-size: 29px;
+                color: rgb(7, 110, 159);
+                text-transform: uppercase; 
+                min-width: 776px;
+                line-height: 48px;
+                background: rgba(255, 255, 255, 0.8);
+                vertical-align: middle;       
+        }
+        &_info span{
+            color: rgb(34, 170, 236);
+        }
+    }
+    &__people{
+        padding-left: 17px;
+        padding-right: 34px;
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+        margin-top: 77px;
+        min-height: 120px;
+        width: 960px;
+        background: rgba(25, 25, 25, 0.7);
+        
+        &_person{
+            display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+            width:189px;
+            min-height:69px;
+            background: rgb(231, 231, 230);
+            border-top-left-radius: 33px;
+            border-bottom-left-radius: 33px;
+            &-photo1{
+                background: url('person1.png') no-repeat;
+                border-radius: 33px;
+                border: 2px solid rgb(34, 170, 236);
+                height:69px;
+                width: 69px;
+                z-index: 10;
+            }
+            &-photo2{
+                background: url('person2.png') no-repeat;
+                border-radius: 33px;
+                border: 2px solid rgb(34, 170, 236);
+                height:69px;
+                width: 69px;
+                z-index: 10;
+            }
+            &-photo3{
+                background: url('person3.png') no-repeat;
+                border-radius: 33px;
+                border: 2px solid rgb(34, 170, 236);
+                height:69px;
+                width: 69px;
+                z-index: 10;
+            }
+            &-photo4{
+                background: url('person4.png') no-repeat;
+                border-radius: 33px;
+                border: 2px solid rgb(34, 170, 236);
+                height:69px;
+                width: 69px;
+                z-index: 10;
+            }
+
+            &-comment{
+                padding: 0 15px;
+                padding-top: 10px;
+              width: 120px;
+               height: 69px;
+               &-about{
+                line-height: 12px;
+                font-size: 9px;
+                font-family: "Arial";
+                color: rgb(81, 81, 81);
+                font-style: italic;
+               }
+               &-name{
+                padding: 7px 0;
+                font-size: 9px;
+                font-family: "Arial";
+                color: rgb(130, 130, 130);
+                line-height: 1.2;
+               }
+            }
+            &-comment4{
+                padding-top: 10px;
+                padding-left: 17px;
+                width: 120px;
+               height: 69px;
+                &-about{
+                    line-height: 12px;
+                    font-size: 9px;
+                    font-family: "Arial";
+                    color: rgb(81, 81, 81);
+                    font-style: italic;
+                   }
+                   &-name{
+                    padding: 7px 0;
+                    font-size: 9px;
+                    font-family: "Arial";
+                    color: rgb(130, 130, 130);
+                    line-height: 1.2;
+                   }
+            }
+        }
+    }
+}
+
+.main{
+    padding: 0 5px;
+    margin: 0 auto;
+    min-height: 566px;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    &__wrapper{
+        width: 100%;
+        min-height: 566px;
+    }
+    &__left{
+        width: 195px;
+       height: 566px;
+        border-bottom: 1px dotted rgb(213, 213, 213);
+        border-right: 1px dotted rgb(213, 213, 213);
+        &_author{
+            min-height: 169px;
+            border-bottom: 1px dotted rgb(213, 213, 213);
+            &-name{
+                padding-top: 34px;
+                font-size: 22px;
+                font-family: LeagueGothic-Regular;
+                color: rgb(7, 110, 159);
+            }
+            &-text{
+                padding: 18px 0;
+                font-size: 10px;
+                font-family: "Arial";
+                color: rgb(92, 92, 92);
+                font-weight: bold;
+                line-height: 14px;
+                width: 171px;
+            }
+            &-text span{
+                color: rgb(7, 110, 159);  
+            }
+        }
+        &_related{
+            min-height: 219px; 
+            border-bottom: 1px dotted rgb(213, 213, 213);
+            &-name{
+                padding-top: 18px;
+                padding-bottom: 11px;
+                font-size: 22px;
+                font-family: LeagueGothic-Regular;
+                color: rgb(7, 110, 159);
+            }
+            &-post{
+                padding: 5.5px 0;
+                min-height: 40px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: center;
+                align-items: center;
+                &-image{
+                    height: 40px;
+                }
+                &-text{
+                    margin-left: 19px;
+                    padding:  5px 0;
+                    height: 40px;
+                   
+                    &-caption{
+                        font-size: 10px;
+                        font-family: "Arial";
+                        color: rgb(92, 92, 92);
+                        font-weight: bold;
+                    }
+                    &-about{
+                        padding-top: 7px;
+                        &-quantity{
+                            height: 16px;
+                            vertical-align: middle;
+                           display: inline-block;
+                            font-size: 10px;
+                            font-family: "Arial";
+                            color: rgb(92, 92, 92);
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+        &_stoke{
+            min-height: 178px; 
+            border-bottom: 1px dotted rgb(213, 213, 213);
+            &-name{
+                padding-top: 23px;
+                font-size: 22px;
+                font-family: LeagueGothic-Regular;
+                color: rgb(7, 110, 159);
+            }
+            &-table{
+                padding: 12px 0;
+            }
+            &-table th{
+                background: rgb(7, 110, 159);
+                width: 39px;
+                height: 19px;
+                font-size: 10px;
+                font-family: "Arial";
+                color: rgb(255, 255, 255);
+            }
+            &-table td{
+                background: rgb(199, 233, 250);
+                font-size: 10px;
+                font-family: "Arial";
+                color: rgb(7, 110, 159);
+                width: 39px;
+                height: 19px;
+                text-align: center;    
+            }
+        }
+    }
+    &__center{
+        width: 754px;
+        height: 566px;
+        border-bottom: 1px dotted rgb(213, 213, 213);
+        &_bigpost{
+            padding: 0 15px;
+            padding-top: 30px;
+            border-top: 2px solid rgb(34, 170, 236);
+            background: white;
+            z-index: 10;
+            position: relative;
+            top: -9px;
+            height: 202px;
+            border-bottom: 1px dotted rgb(213, 213, 213);
+            &-caption{
+               
+                font-size: 32px;
+                font-family: LeagueGothic-Regular;
+                    color: rgb(7, 110, 159);
+            }
+            &-list{
+                margin-top: 15px;
+                display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-content: flex-start;
+                        align-items: flex-start;
+                &-image1{
+                    background: url('circle.png') no-repeat;
+                    height: 50px;
+                    width: 50px;
+                    &-pr{
+                        font-size: 8px;
+                        font-family: "Arial";
+                        color: rgb(255, 255, 255);
+                        font-weight: bold;
+                        text-align: center;
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                    }
+                }
+                &-image2{
+                    margin-left: 10px;
+                    margin-right: 30px;
+                    background: url('circle2.png') no-repeat;
+                    height: 50px;
+                    width: 50px;
+                   
+                }
+                &-about{
+                    &-text{
+                    font-size: 10px;
+                    font-family: "Arial";
+                    color: rgb(92, 92, 92);
+                    line-height: 1.8;
+                    width: 550px;   
+                    }
+                    &-other{
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+                        min-width: 580px;
+                        display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-content: center;
+                            align-items: center;
+                        &-button{
+                            min-width: 70px;
+                            height: 22px;
+                            color: white;
+                            background: rgb(8, 121, 168);
+                            font-size: 10px;
+                            font-family: "Arial";
+                            color: rgb(255, 255, 255);
+                            font-weight: bold;
+                            border: 1px solid rgb(4, 82, 121);
+                           cursor: pointer;
+                           border-bottom: none;
+                           box-shadow: 0 1px 0 0 rgb(70, 155, 191) inset,
+                           0 3px 0 0 rgb(0, 20, 30),
+                                     0 5px 0 0 rgb(214, 214, 214);
+                        }
+                        &-meta{
+                            position: relative;
+                            right: -25px;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            align-content: center;
+                            align-items: center;
+                            width: 179px;
+                            height: 25px;
+                            background: rgb(144, 212, 245);
+                            &-item{
+                               
+                                font-size: 10px;
+                                    font-family: "Arial";
+                                    color: rgb(7, 110, 159);
+                                    line-height: 1.8;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        &_post{
+            padding-left: 15px;
+            padding-top: 10px;
+           min-height: 369px;
+            display: inline-block;
+           &_smallpost{
+              
+             display: inline-block;
+              width:  364px;
+              min-height: 214px ;
+              background: rgb(234, 234, 234);
+              border-top-left-radius: 10px;
+              &-top{
+                min-height: 184px ;
+                padding: 26px 30px 26px 30px;
+                &-caption{
+                    font-size: 22px;
+                    font-family: LeagueGothic-Regular;
+                    color: rgb(7, 110, 159);
+                  }
+                  &-date{
+                      
+                    font-size: 10px;
+                    font-family: "Arial";
+                    color: rgb(135, 135, 135);
+                  }
+                  &-date span{
+                    color: rgb(7, 110, 159);
+                  }
+                  &-text{
+                    margin-top: 25px;
+                      line-height: 1.5;
+                    font-size: 10px;
+                    font-family: "Arial";
+                    color: rgb(92, 92, 92);
+                   
+                    width: 254px;
+                  }
+                  &-another{
+                     margin-top: 7px;
+                    font-size: 10px;
+                    font-family: "Arial";
+                    color: rgb(7, 110, 159);
+                    
+                  }
+              }
+              &-bottom{
+                  min-height: 30px;
+                  background: rgb(244, 243, 243);
+                  display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    align-content: center;
+                    align-items: center;
+                   &-likes{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                        &-image{
+                            
+                            background: url('likesblue.png') no-repeat;
+                            width: 16px;
+                            height: 15px;
+                        }
+                        &-item{
+                           padding: 0 4px;
+                        font-size: 10px;
+                        font-family: "Arial";
+                        color: rgb(7, 110, 159);
+                        line-height: 1.8;
+                        }
+                   }
+                   &-message{
+                   padding: 0 10px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                     &-image{
+                        
+                         background: url('messageblue.png') no-repeat;
+                         width: 16px;
+                         height: 16px;
+                     }
+                     &-item{
+                        padding: 0 4px;
+                     font-size: 10px;
+                     font-family: "Arial";
+                     color: rgb(7, 110, 159);
+                     line-height: 1.8;
+                     }
+                }
+              }
+           }
+           &_smallpost2{
+            display: inline-block;   
+            width:  364px;
+            min-height: 214px ;
+            background: rgb(234, 234, 234);
+            border-top-left-radius: 10px;
+            &-top{
+                min-height: 184px ;
+                padding: 26px 30px 0 30px;
+              &-caption{
+                  font-size: 22px;
+                  font-family: LeagueGothic-Regular;
+                  color: rgb(7, 110, 159);
+                }
+                &-date{
+                
+                  font-size: 10px;
+                  font-family: "Arial";
+                  color: rgb(135, 135, 135);
+                }
+                &-date span{
+                  color: rgb(7, 110, 159);
+                }
+                &-text{
+                    margin-top: 15px;
+                    line-height: 1.3;  
+                  font-size: 10px;
+                  font-family: "Arial";
+                  color: rgb(92, 92, 92);
+                  
+                  width: 254px;
+                }
+                &-another{
+                    
+                    
+                  font-size: 10px;
+                  font-family: "Arial";
+                  color: rgb(7, 110, 159);
+                  
+                }
+            }
+            &-bottom{
+                min-height: 30px;
+                background: rgb(244, 243, 243);
+                display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: flex-end;
+                  align-content: center;
+                  align-items: center;
+                 &-likes{
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  align-content: center;
+                  align-items: center;
+                      &-image{
+                          
+                          background: url('likesblue.png') no-repeat;
+                          width: 16px;
+                          height: 15px;
+                      }
+                      &-item{
+                         padding: 0 4px;
+                      font-size: 10px;
+                      font-family: "Arial";
+                      color: rgb(7, 110, 159);
+                      line-height: 1.8;
+                      }
+                 }
+                 &-message{
+                 padding: 0 10px;
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  align-content: center;
+                  align-items: center;
+                   &-image{
+                      
+                       background: url('messageblue.png') no-repeat;
+                       width: 16px;
+                       height: 16px;
+                   }
+                   &-item{
+                      padding: 0 4px;
+                   font-size: 10px;
+                   font-family: "Arial";
+                   color: rgb(7, 110, 159);
+                   line-height: 1.8;
+                   }
+              }
+            }
+           }
+           &_component{
+               margin-top: 30px;
+               min-height: 80px;
+               background: rgb(239, 238, 238);
+               &-text{
+                  text-align: center;
+                  margin: auto 0;
+                  line-height: 80px;
+                  font-size: 12px;
+                  font-family: "Arial";
+                  color: rgb(99, 99, 99);
+                  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+               }
+           }
+        }
+        
+    }
+}
+
+.information{
+    padding: 0 5px;
+    font-size: 32px;
+    font-family: LeagueGothic-Regular;
+    color: rgb(7, 110, 159);
+        
+    width: 960px;
+        min-height: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items:flex-start;
+    &__wrapper{
+        width: 100%;
+        min-height: 60px; 
+    }
+}
+
+.map{
+    margin: 0 auto;
+    height: 200px;
+    max-width: 960px;
+    &__wrapper{
+        margin: 0 auto;
+        height: 200px;
+    width: 100%;
+    
+    }
+}
+
+.footer{
+    margin: 0 auto;
+    min-height: 76px;
+    max-width: 960px;
+    
+
+    &__wrapper{
+        width: 100%;
+        min-height: 76px;
+    }
+    &__top{
+        border-bottom: 1px dotted rgb(213, 213, 213);
+        min-height: 44px;
+  max-width: 960px;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+        &_logo{
+            display: inline-block;
+        font-family: LeagueGothic-Regular;
+        font-size: 26px; 
+        color: rgb(7, 110, 159);    
+        }
+        &_logo span{
+        color: rgb(34, 170, 236);
+        }  
+        &_menu{
+        
+        display: inline-block;
+        
+            &-item{
+            margin: 0 18px;
+            display: inline-block; 
+            min-width: 62px;
+            line-height: 16px;
+            
+            text-align: center;
+            vertical-align: middle;
+            
+           
+            }
+            &-item a {
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 10px;
+            font-family: Arial;
+            color: rgb(112, 112, 112);
+            text-transform: uppercase; 
+            
+            }
+            &-item:hover{
+            box-shadow: 0 1px 0 0 rgb(70, 155, 191) inset;
+            background: rgb(7, 106, 155);
+            border: 1px solid rgb(4, 82, 121);
+            }
+            &-item:hover a{
+            color: white;
+            }
+        }
+    }
+    &__bottom{
+        
+    line-height: 32px;
+     max-width: 960px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    font-family: "Arial";
+    color: rgb(120, 120, 120);
+    }
+}
+
