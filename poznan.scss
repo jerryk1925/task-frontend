@@ -25,9 +25,7 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        @media only screen and (max-width: 720px) {
-          
-        }
+       
         &_logo{
            
         font-family: LeagueGothic-Regular;
@@ -288,7 +286,7 @@
                height: 69px;
                @media only screen and (max-width: 479px) {
                 padding: 0 5px;
-                padding-top: 10px;
+                padding-top: 5px;
                 width: 100px;
                 }
                 &-about{
@@ -332,15 +330,26 @@
     justify-content: flex-start;
     align-content: center;
     align-items: center;
+    border-bottom: 1px dotted rgb(213, 213, 213);
+    @media only screen and (max-width: 720px) {
+               
+        align-items: flex-start;
+    }
     &__wrapper{
         width: 100%;
         min-height: 566px;
     }
     &__left{
-        width: 195px;
+        width: 20%;
        height: 566px;
-        border-bottom: 1px dotted rgb(213, 213, 213);
-        border-right: 1px dotted rgb(213, 213, 213);
+        
+        
+        @media only screen and (max-width: 720px) {
+            width: 30%;
+        }
+        @media only screen and (max-width: 479px) {
+            width: 33%;
+        }
         &_author{
             min-height: 169px;
             border-bottom: 1px dotted rgb(213, 213, 213);
@@ -357,7 +366,7 @@
                 color: rgb(92, 92, 92);
                 font-weight: bold;
                 line-height: 14px;
-                width: 171px;
+                max-width: 171px;
             }
             &-text span{
                 color: rgb(7, 110, 159);  
@@ -389,12 +398,25 @@
                     margin-left: 19px;
                     padding:  5px 0;
                     height: 40px;
+                    @media only screen and (max-width: 815px) {
+                        margin-left: 2px;
+                    }
+                    @media only screen and (max-width: 720px) {
+                        margin-left: 5px;
+                    }
+                    
                    
                     &-caption{
                         font-size: 10px;
                         font-family: "Arial";
                         color: rgb(92, 92, 92);
                         font-weight: bold;
+                        @media only screen and (max-width: 815px) {
+                            font-size: 9px;
+                        }
+                        @media only screen and (max-width: 500px) {
+                            font-size: 8px;
+                        }
                     }
                     &-about{
                         padding-top: 7px;
@@ -412,6 +434,12 @@
                             font-family: "Arial";
                             color: rgb(92, 92, 92);
                             font-style: italic;
+                            @media only screen and (max-width: 815px) {
+                                font-size: 9px;
+                            }
+                            @media only screen and (max-width: 500px) {
+                            font-size: 8px;
+                        }
                         }
                         &-message:hover{
                             background: url('messagehover.png') no-repeat;
@@ -422,7 +450,7 @@
         }
         &_stoke{
             min-height: 178px; 
-            border-bottom: 1px dotted rgb(213, 213, 213);
+            
             &-name{
                 padding-top: 23px;
                 font-size: 22px;
@@ -458,9 +486,15 @@
         }
     }
     &__center{
-        width: 754px;
-        height: 566px;
-        border-bottom: 1px dotted rgb(213, 213, 213);
+        width: 79.5%;
+        min-height: 566px;
+        border-left: 1px dotted rgb(213, 213, 213);
+        @media only screen and (max-width: 720px) {
+            width: 70%;
+        }
+        @media only screen and (max-width: 479px) {
+            width: 67%;
+        }
         &_bigpost{
             padding: 0 15px;
             padding-top: 30px;
@@ -469,8 +503,9 @@
             z-index: 10;
             position: relative;
             top: -9px;
-            height: 202px;
+            min-height: 202px;
             border-bottom: 1px dotted rgb(213, 213, 213);
+            border-right: 1px dotted rgb(213, 213, 213);
             &-caption{
                
                 font-size: 32px;
@@ -480,11 +515,14 @@
             &-list{
                 margin-top: 15px;
                 display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: flex-start;
-                        align-content: flex-start;
-                        align-items: flex-start;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                align-content: flex-start;
+                align-items: flex-start;
+                @media only screen and (max-width: 720px) {
+                    flex-wrap: wrap;
+                }
                 &-image1{
                     background: url('circle.png') no-repeat;
                     height: 50px;
@@ -514,17 +552,22 @@
                    
                 }
                 &-about{
+                    width: 80%;
+                    @media only screen and (max-width: 720px) {
+                        width: 100%;
+                    }
                     &-text{
                     font-size: 10px;
                     font-family: "Arial";
                     color: rgb(92, 92, 92);
-                    line-height: 1.8;
-                    width: 550px;   
+                    line-height: 1.5;
+                    width: 95%;  
+                    min-height: 35px;
                     }
                     &-other{
-                        margin-top: 30px;
+                        margin-top: 20px;
                         margin-bottom: 20px;
-                        min-width: 580px;
+                        width: 100%; 
                         display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
@@ -548,19 +591,30 @@
                                      0 5px 0 0 rgb(214, 214, 214);
                         }
                         &-meta{
+                            padding: 0 5px;
                             position: relative;
-                            right: -25px;
+                            right: -30px;
                             display: flex;
                             flex-direction: row;
                             flex-wrap: wrap;
                             justify-content: space-around;
                             align-content: center;
                             align-items: center;
-                            width: 179px;
+                            min-width: 33%;
                             height: 25px;
                             background: rgb(144, 212, 245);
+                            @media only screen and (max-width: 720px) {
+                                margin-top: 10px;
+                                padding: 0 5px;
+                                right: -15px;
+                            }
+                            @media only screen and (max-width: 720px) {
+                                right: 0;
+                            }
                             &-item{
-                               
+                                @media only screen and (max-width: 720px) {
+                                    padding: 0 5px;
+                                }
                                 font-size: 10px;
                                     font-family: "Arial";
                                     color: rgb(7, 110, 159);
@@ -573,6 +627,7 @@
             }
         }
         &_post{
+            width: 100%;
             padding-left: 15px;
             padding-top: 10px;
            min-height: 369px;
@@ -580,10 +635,13 @@
            &_smallpost{
               
              display: inline-block;
-              width:  364px;
+             width:  49.5%;
               min-height: 214px ;
               background: rgb(234, 234, 234);
               border-top-left-radius: 10px;
+              @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
               &-top{
                 min-height: 184px ;
                 padding: 26px 30px 26px 30px;
@@ -608,7 +666,7 @@
                     font-family: "Arial";
                     color: rgb(92, 92, 92);
                    
-                    width: 254px;
+                    max-width: 254px;
                   }
                   &-another{
                      margin-top: 7px;
@@ -673,11 +731,16 @@
               }
            }
            &_smallpost2{
+               
             display: inline-block;   
-            width:  364px;
+            width:  49.5%;
             min-height: 214px ;
             background: rgb(234, 234, 234);
             border-top-left-radius: 10px;
+            @media only screen and (max-width: 600px) {
+                margin-top:5px;
+                width: 100%;
+            }
             &-top{
                 min-height: 184px ;
                 padding: 26px 30px 0 30px;
@@ -701,8 +764,8 @@
                   font-size: 10px;
                   font-family: "Arial";
                   color: rgb(92, 92, 92);
-                  
-                  width: 254px;
+                  min-height: 60px;
+                  max-width: 270px;
                 }
                 &-another{
                     
@@ -771,6 +834,10 @@
                margin-top: 30px;
                min-height: 80px;
                background: rgb(239, 238, 238);
+               @media only screen and (max-width: 720px) {
+               
+                margin-bottom: 30px;
+            }
                &-text{
                   text-align: center;
                   margin: auto 0;
@@ -792,7 +859,7 @@
     font-family: LeagueGothic-Regular;
     color: rgb(7, 110, 159);
         
-    width: 960px;
+    max-width: 960px;
         min-height: 60px;
     margin: 0 auto;
     display: flex;
@@ -801,6 +868,9 @@
     justify-content: center;
     align-content: center;
     align-items:flex-start;
+    @media only screen and (max-width: 479px) {
+        align-items:center;
+    }
     &__wrapper{
         width: 100%;
         min-height: 60px; 
@@ -820,6 +890,7 @@
 }
 
 .footer{
+    padding: 0 5px;
     margin: 0 auto;
     min-height: 76px;
     max-width: 960px;
@@ -844,7 +915,12 @@
             display: inline-block;
         font-family: LeagueGothic-Regular;
         font-size: 26px; 
-        color: rgb(7, 110, 159);    
+        color: rgb(7, 110, 159);
+        @media only screen and (max-width: 479px) {
+            width: 100%;
+            text-align: center;
+           
+            }    
         }
         &_logo span{
         color: rgb(34, 170, 236);
@@ -852,9 +928,14 @@
         &_menu{
         
         display: inline-block;
+        @media only screen and (max-width: 479px) {
+            width: 100%;
+            text-align: center;
+           
+            } 
         
             &-item{
-            margin: 0 18px;
+            
             display: inline-block; 
             min-width: 62px;
             line-height: 16px;
