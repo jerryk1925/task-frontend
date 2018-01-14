@@ -17,11 +17,17 @@
 }
 
 .header__top {
-  display: inline-block;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .header__top_logo {
-  display: inline-block;
   font-family: LeagueGothic-Regular;
   font-size: 32px;
   color: #076e9f;
@@ -32,6 +38,8 @@
 }
 
 .header__top_social {
+  right: 0;
+  position: absolute;
   margin-left: 261px;
   display: inline-block;
 }
@@ -56,7 +64,6 @@
 }
 
 .header__menu_item a {
-  font-weight: bold;
   text-decoration: none;
   font-size: 10px;
   font-family: "Arial";
@@ -68,6 +75,7 @@
   box-shadow: 0 1px 0 0 #469bbf inset;
   background: #076a9b;
   border: 1px solid #045279;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.55);
 }
 
 .header__menu_item:hover a {
@@ -163,7 +171,6 @@
 .visit__people_person-photo1 {
   background: url("person1.png") no-repeat;
   border-radius: 33px;
-  border: 2px solid #22aaec;
   height: 69px;
   width: 69px;
   z-index: 10;
@@ -172,7 +179,6 @@
 .visit__people_person-photo2 {
   background: url("person2.png") no-repeat;
   border-radius: 33px;
-  border: 2px solid #22aaec;
   height: 69px;
   width: 69px;
   z-index: 10;
@@ -181,7 +187,6 @@
 .visit__people_person-photo3 {
   background: url("person3.png") no-repeat;
   border-radius: 33px;
-  border: 2px solid #22aaec;
   height: 69px;
   width: 69px;
   z-index: 10;
@@ -190,7 +195,6 @@
 .visit__people_person-photo4 {
   background: url("person4.png") no-repeat;
   border-radius: 33px;
-  border: 2px solid #22aaec;
   height: 69px;
   width: 69px;
   z-index: 10;
@@ -200,7 +204,7 @@
   padding: 0 15px;
   padding-top: 10px;
   width: 120px;
-  height: 69px;
+  min-height: 69px;
 }
 
 .visit__people_person-comment-about {
@@ -240,6 +244,14 @@
   font-family: "Arial";
   color: #828282;
   line-height: 1.2;
+}
+
+.visit__people_person:hover .visit__people_person-photo1,
+.visit__people_person:hover .visit__people_person-photo2,
+.visit__people_person:hover .visit__people_person-photo3,
+.visit__people_person:hover .visit__people_person-photo4 {
+  border: 3px solid #22aaec;
+  box-shadow: 2px 0 0 rgba(0, 0, 0, 0.44);
 }
 
 .main {
@@ -338,6 +350,13 @@
   padding-top: 7px;
 }
 
+.main__left_related-post-text-about-message {
+  background: url("message.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
 .main__left_related-post-text-about-quantity {
   height: 16px;
   vertical-align: middle;
@@ -346,6 +365,10 @@
   font-family: "Arial";
   color: #5c5c5c;
   font-style: italic;
+}
+
+.main__left_related-post-text-about-message:hover {
+  background: url("messagehover.png") no-repeat;
 }
 
 .main__left_stoke {
@@ -374,13 +397,20 @@
 }
 
 .main__left_stoke-table td {
-  background: #c7e9fa;
   font-size: 10px;
   font-family: "Arial";
   color: #076e9f;
   width: 39px;
   height: 19px;
   text-align: center;
+}
+
+.main__left_stoke-table tr {
+  background: #c7e9fa;
+}
+
+.main__left_stoke-table tr:hover {
+  background: #b1e1f8;
 }
 
 .main__center {

@@ -17,10 +17,16 @@
         border-bottom: 2px solid rgb(34, 170, 236);
     }
     &__top{
-        
-        display: inline-block;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
         &_logo{
-            display: inline-block;
+           
         font-family: LeagueGothic-Regular;
         font-size: 32px; 
         color: rgb(7, 110, 159);    
@@ -29,7 +35,8 @@
         color: rgb(34, 170, 236);
         }
         &_social{
-           
+            right: 0;
+           position: absolute;
             margin-left: 261px;
             display: inline-block;
             &-icon{
@@ -55,18 +62,22 @@
            
         }
         &_item a {
-            font-weight: bold;
+           
             text-decoration: none;
             font-size: 10px;
             font-family: "Arial";
             color: rgb(112, 112, 112);
             text-transform: uppercase; 
             
+            
+            
         }
         &_item:hover{
             box-shadow: 0 1px 0 0 rgb(70, 155, 191) inset;
             background: rgb(7, 106, 155);
             border: 1px solid rgb(4, 82, 121);
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.55);
+            
         }
         &_item:hover a{
             color: white;
@@ -100,7 +111,7 @@
             margin: auto;
             font-family: LeagueGothic-Regular;
             font-size: 60px;
-                
+               
                 color: rgb(7, 110, 159);
                 text-transform: uppercase; 
                 width: 285px;
@@ -157,41 +168,45 @@
             &-photo1{
                 background: url('person1.png') no-repeat;
                 border-radius: 33px;
-                border: 2px solid rgb(34, 170, 236);
+                
                 height:69px;
                 width: 69px;
                 z-index: 10;
+                
             }
             &-photo2{
                 background: url('person2.png') no-repeat;
                 border-radius: 33px;
-                border: 2px solid rgb(34, 170, 236);
+                
                 height:69px;
                 width: 69px;
                 z-index: 10;
+                
             }
             &-photo3{
                 background: url('person3.png') no-repeat;
                 border-radius: 33px;
-                border: 2px solid rgb(34, 170, 236);
+                
                 height:69px;
                 width: 69px;
                 z-index: 10;
+               
             }
             &-photo4{
                 background: url('person4.png') no-repeat;
                 border-radius: 33px;
-                border: 2px solid rgb(34, 170, 236);
+                
                 height:69px;
                 width: 69px;
                 z-index: 10;
+                
             }
 
             &-comment{
                 padding: 0 15px;
                 padding-top: 10px;
               width: 120px;
-               height: 69px;
+               min-height: 69px;
                &-about{
                 line-height: 12px;
                 font-size: 9px;
@@ -227,6 +242,13 @@
                     line-height: 1.2;
                    }
             }
+        }
+        &_person:hover &_person-photo1,
+        &_person:hover &_person-photo2,
+        &_person:hover &_person-photo3,
+        &_person:hover &_person-photo4{
+            border: 3px solid rgb(34, 170, 236);
+            box-shadow: 2px 0 0 rgba(0, 0, 0, 0.44);
         }
     }
 }
@@ -308,6 +330,12 @@
                     }
                     &-about{
                         padding-top: 7px;
+                        &-message{
+                            background: url('message.png') no-repeat;
+                            width: 16px;
+                            height: 16px;
+                            display: inline-block;
+                        }
                         &-quantity{
                             height: 16px;
                             vertical-align: middle;
@@ -316,6 +344,9 @@
                             font-family: "Arial";
                             color: rgb(92, 92, 92);
                             font-style: italic;
+                        }
+                        &-message:hover{
+                            background: url('messagehover.png') no-repeat;
                         }
                     }
                 }
@@ -342,13 +373,19 @@
                 color: rgb(255, 255, 255);
             }
             &-table td{
-                background: rgb(199, 233, 250);
+                
                 font-size: 10px;
                 font-family: "Arial";
                 color: rgb(7, 110, 159);
                 width: 39px;
                 height: 19px;
                 text-align: center;    
+            }
+            &-table tr{
+                background:rgb(199, 233, 250);
+            }
+            &-table tr:hover{
+                background:  rgb(177, 225, 248);
             }
         }
     }
