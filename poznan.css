@@ -33,6 +33,13 @@
   color: #076e9f;
 }
 
+@media only screen and (max-width: 479px) {
+  .header__top_logo {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .header__top_logo span {
   color: #22aaec;
 }
@@ -42,6 +49,20 @@
   position: absolute;
   margin-left: 261px;
   display: inline-block;
+}
+
+@media only screen and (max-width: 720px) {
+  .header__top_social {
+    position: relative;
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .header__top_social {
+    position: relative;
+    margin-left: 0;
+  }
 }
 
 .header__top_social-icon {
@@ -54,6 +75,12 @@
   display: inline-block;
 }
 
+@media only screen and (max-width: 479px) {
+  .header__menu {
+    margin-top: 5px;
+  }
+}
+
 .header__menu_item {
   margin: 0 18px;
   display: inline-block;
@@ -61,6 +88,12 @@
   line-height: 16px;
   text-align: center;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 479px) {
+  .header__menu_item {
+    margin: 0 8px;
+  }
 }
 
 .header__menu_item a {
@@ -95,8 +128,9 @@
 }
 
 .visit__wrapper {
+  margin: 0 auto;
   min-height: 435px;
-  width: 100%;
+  max-width: 1020px;
   background: url("main.jpg") no-repeat;
   background-position: center;
   border-bottom: 2px solid #22aaec;
@@ -113,10 +147,26 @@
   font-size: 60px;
   color: #076e9f;
   text-transform: uppercase;
-  width: 285px;
+  max-width: 285px;
   line-height: 79px;
   background: rgba(255, 255, 255, 0.8);
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 720px) {
+  .visit__claim_caption {
+    font-size: 50px;
+    line-height: 70px;
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .visit__claim_caption {
+    font-size: 45px;
+    line-height: 60px;
+    max-width: 220px;
+  }
 }
 
 .visit__claim_caption span {
@@ -129,7 +179,7 @@
   font-size: 29px;
   color: #076e9f;
   text-transform: uppercase;
-  min-width: 776px;
+  max-width: 776px;
   line-height: 48px;
   background: rgba(255, 255, 255, 0.8);
   vertical-align: middle;
@@ -140,18 +190,55 @@
 }
 
 .visit__people {
+  margin: 0 auto;
   padding-left: 17px;
   padding-right: 34px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: center;
+  align-content: space-between;
   align-items: center;
-  margin-top: 77px;
   min-height: 120px;
-  width: 960px;
+  max-width: 960px;
+}
+
+@media only screen and (max-width: 808px) {
+  .visit__people {
+    min-height: 150px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .visit__people {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.visit__people_wrapper {
+  margin-top: 77px;
   background: rgba(25, 25, 25, 0.7);
+  width: 1020px;
+  min-height: 120px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .visit__people_wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .visit__people_wrapper {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .visit__people_wrapper {
+    margin-top: 20px;
+  }
 }
 
 .visit__people_person {
@@ -161,7 +248,7 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  width: 189px;
+  max-width: 189px;
   min-height: 69px;
   background: #e7e7e6;
   border-top-left-radius: 33px;
@@ -207,6 +294,14 @@
   min-height: 69px;
 }
 
+@media only screen and (max-width: 479px) {
+  .visit__people_person-comment {
+    padding: 0 5px;
+    padding-top: 10px;
+    width: 100px;
+  }
+}
+
 .visit__people_person-comment-about {
   line-height: 12px;
   font-size: 9px;
@@ -230,6 +325,14 @@
   height: 69px;
 }
 
+@media only screen and (max-width: 479px) {
+  .visit__people_person-comment4 {
+    padding: 0 5px;
+    padding-top: 10px;
+    width: 100px;
+  }
+}
+
 .visit__people_person-comment4-about {
   line-height: 12px;
   font-size: 9px;
@@ -244,6 +347,12 @@
   font-family: "Arial";
   color: #828282;
   line-height: 1.2;
+}
+
+@media only screen and (max-width: 479px) {
+  .visit__people_person-comment4-name {
+    padding: 0;
+  }
 }
 
 .visit__people_person:hover .visit__people_person-photo1,

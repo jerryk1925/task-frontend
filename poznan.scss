@@ -9,7 +9,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-
+   
     &__wrapper{
        
         width: 100%;
@@ -25,11 +25,18 @@
         justify-content: center;
         align-content: center;
         align-items: center;
+        @media only screen and (max-width: 720px) {
+          
+        }
         &_logo{
            
         font-family: LeagueGothic-Regular;
         font-size: 32px; 
         color: rgb(7, 110, 159);    
+        @media only screen and (max-width: 479px) {
+            width: 100%;
+            text-align: center;
+            }
         }
         &_logo span{
         color: rgb(34, 170, 236);
@@ -39,6 +46,14 @@
            position: absolute;
             margin-left: 261px;
             display: inline-block;
+            @media only screen and (max-width: 720px) {
+                position: relative;
+                margin-left: 20%;
+            }
+            @media only screen and (max-width: 479px) {
+                position: relative;
+                margin-left: 0;
+            }
             &-icon{
                 display: inline-block;
                 padding: 0 3.5px;
@@ -49,7 +64,9 @@
     &__menu{
         margin-top: 18px ;
         display: inline-block;
-        
+        @media only screen and (max-width: 479px) {
+            margin-top: 5px ;
+        }
         &_item{
             margin: 0 18px;
             display: inline-block; 
@@ -58,6 +75,9 @@
             
             text-align: center;
             vertical-align: middle;
+            @media only screen and (max-width: 479px) {
+                margin: 0 8px;
+            }
             
            
         }
@@ -96,8 +116,9 @@
     align-content: center;
     align-items: center;
     &__wrapper{
+        margin: 0 auto;
         min-height: 435px;
-        width: 100%;
+        max-width: 1020px;
         background: url('main.jpg') no-repeat;
         background-position: center;
         border-bottom: 2px solid #22aaec;
@@ -114,10 +135,20 @@
                
                 color: rgb(7, 110, 159);
                 text-transform: uppercase; 
-                width: 285px;
+                max-width: 285px;
                 line-height: 79px;
                 background: rgba(255, 255, 255, 0.8);
                 vertical-align: middle;
+                @media only screen and (max-width: 720px) {
+                    font-size: 50px;
+                    line-height: 70px;
+                    max-width: 250px;
+                }
+                @media only screen and (max-width: 479px) {
+                    font-size: 45px;
+                    line-height: 60px;
+                    max-width: 220px;
+                }
         }
         &_caption span{
             color: rgb(34, 170, 236);
@@ -130,7 +161,7 @@
             font-size: 29px;
                 color: rgb(7, 110, 159);
                 text-transform: uppercase; 
-                min-width: 776px;
+                max-width: 776px;
                 line-height: 48px;
                 background: rgba(255, 255, 255, 0.8);
                 vertical-align: middle;       
@@ -140,19 +171,42 @@
         }
     }
     &__people{
+        margin: 0 auto;
         padding-left: 17px;
         padding-right: 34px;
         display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
+    align-content: space-between;
     align-items: center;
-        margin-top: 77px;
+       
         min-height: 120px;
-        width: 960px;
-        background: rgba(25, 25, 25, 0.7);
+        max-width: 960px;
+        @media only screen and (max-width: 808px) {
+            min-height: 150px;
+        }
+        @media only screen and (max-width: 479px) {
+            padding-left: 5px;
+        padding-right: 5px;
+        }
         
+        &_wrapper{
+            margin-top: 77px;
+            background: rgba(25, 25, 25, 0.7);
+            width:1020px;   
+            min-height: 120px;
+            @media only screen and (max-width: 1020px) {
+                width:100%;
+            }
+            @media only screen and (max-width: 720px) {
+                margin-top: 50px;
+            }
+            @media only screen and (max-width: 479px) {
+                margin-top: 20px;
+            }
+            
+        }
         &_person{
             display: flex;
     flex-direction: row;
@@ -160,7 +214,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-            width:189px;
+            max-width:189px;
             min-height:69px;
             background: rgb(231, 231, 230);
             border-top-left-radius: 33px;
@@ -207,6 +261,11 @@
                 padding-top: 10px;
               width: 120px;
                min-height: 69px;
+               @media only screen and (max-width: 479px) {
+                padding: 0 5px;
+                padding-top: 10px;
+                width: 100px;
+                }
                &-about{
                 line-height: 12px;
                 font-size: 9px;
@@ -227,6 +286,11 @@
                 padding-left: 17px;
                 width: 120px;
                height: 69px;
+               @media only screen and (max-width: 479px) {
+                padding: 0 5px;
+                padding-top: 10px;
+                width: 100px;
+                }
                 &-about{
                     line-height: 12px;
                     font-size: 9px;
@@ -240,7 +304,11 @@
                     font-family: "Arial";
                     color: rgb(130, 130, 130);
                     line-height: 1.2;
-                   }
+                    @media only screen and (max-width: 479px) {
+                       padding: 0;
+                        }
+                    
+                }
             }
         }
         &_person:hover &_person-photo1,

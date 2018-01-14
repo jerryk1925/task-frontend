@@ -541,49 +541,57 @@
             </div>
         </div>
     </div>
+    
     <div class="visit__wrapper">
         <div class="visit">
             <div class="visit__claim">
                 <div class="visit__claim_caption">VISIT POZ<span>NAN</span></div>
                 <div class="visit__claim_info">A CITY ON THE <span>WARATA</span> RIVER IN WEST - CENTRAL <span>POLAND</span>, THE REGION CALLED <span>GREATER POLAND</span></div>
             </div>
-            <div class="visit__people">
-                <div class="visit__people_person">
-                    <div class="visit__people_person-photo1"></div>
-                    <div class="visit__people_person-comment">
-                        <div class="visit__people_person-comment-about">I was in Poznan once. The arhitecture<br> is really awesome.</div>
-                        <div class="visit__people_person-comment-name">Joe Wisdom, architect</div>
-                    </div>
-                </div>
-                <div class="visit__people_person">
-                    <div class="visit__people_person-photo2"></div>
-                    <div class="visit__people_person-comment">
-                        <div class="visit__people_person-comment-about">I was lost in Poznan for 3 days.<br> I was terrified</div>
-                        <div class="visit__people_person-comment-name">Little Box, child</div>
-                    </div>
-                </div>
-                <div class="visit__people_person">
-                        <div class="visit__people_person-photo3">
-                            
+            <div class="visit__people_wrapper">
+                <div class="visit__people">
+                    <div class="visit__people_person">
+                        <div class="visit__people_person-photo1"></div>
+                        <div class="visit__people_person-comment">
+                            <div class="visit__people_person-comment-about">I was in Poznan once. The arhitecture
+                                <br> is really awesome.</div>
+                            <div class="visit__people_person-comment-name">Joe Wisdom, architect</div>
                         </div>
-                    <div class="visit__people_person-comment">
-                        <div class="visit__people_person-comment-about">People used to<br> look at me now<br> they don't see me</div>
-                        <div class="visit__people_person-comment-name">Eva Doe, exmodel</div>
                     </div>
-                </div>
-                <div class="visit__people_person">
-                    <div class="visit__people_person-photo4">
-                        
+                    <div class="visit__people_person">
+                        <div class="visit__people_person-photo2"></div>
+                        <div class="visit__people_person-comment">
+                            <div class="visit__people_person-comment-about">I was lost in Poznan for 3 days.
+                                <br> I was terrified</div>
+                            <div class="visit__people_person-comment-name">Little Box, child</div>
+                        </div>
                     </div>
-                    <div class="visit__people_person-comment4">
-                        <div class="visit__people_person-comment-about">I have a lot of penfrinds in Poznan. I like <br> written them and...</div>
-                        <div class="visit__people_person-comment-name">Emmma Smith, child</div>
+                    <div class="visit__people_person">
+                        <div class="visit__people_person-photo3">
+            
+                        </div>
+                        <div class="visit__people_person-comment">
+                            <div class="visit__people_person-comment-about">People used to
+                                <br> look at me now
+                                <br> they don't see me</div>
+                            <div class="visit__people_person-comment-name">Eva Doe, exmodel</div>
+                        </div>
+                    </div>
+                    <div class="visit__people_person">
+                        <div class="visit__people_person-photo4">
+            
+                        </div>
+                        <div class="visit__people_person-comment4">
+                            <div class="visit__people_person-comment4-about">I have a lot of penfrinds in Poznan. I like
+                                <br> written them and...</div>
+                            <div class="visit__people_person-comment4-name">Emmma Smith, child</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+<!--
     <div class="main__wrapper">
         <div class="main">
             <div class="main__left">
@@ -764,6 +772,7 @@
             var uluru = { lat: 52.427226, lng: 16.937442 };
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 14,
+                scrollwheel: false,
                 center: uluru
             });
             var marker = new google.maps.Marker({
@@ -774,5 +783,6 @@
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPo6D51wUx2ebNJ_8nF-2BekHe2FDkLIg&callback=initMap">
     </script>
+
 </body>
 </html>  
