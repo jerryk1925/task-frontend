@@ -11,8 +11,8 @@
     align-items: center;
    
     &__wrapper{
-       
-        width: 100%;
+        margin: 0 auto;
+        width: 1020px;
         min-height: 90px;
         border-bottom: 2px solid rgb(34, 170, 236);
     }
@@ -591,6 +591,7 @@
                                      0 5px 0 0 rgb(214, 214, 214);
                         }
                         &-meta{
+                            border-top: 1px solid  rgb(159, 218, 246);
                             padding: 0 5px;
                             position: relative;
                             right: -30px;
@@ -1030,6 +1031,7 @@
             box-shadow: 0 1px 0 0 rgb(70, 155, 191) inset;
             background: rgb(7, 106, 155);
             border: 1px solid rgb(4, 82, 121);
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.55);
             }
             &-item:hover a{
             color: white;

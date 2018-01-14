@@ -11,7 +11,8 @@
 }
 
 .header__wrapper {
-  width: 100%;
+  margin: 0 auto;
+  width: 1020px;
   min-height: 90px;
   border-bottom: 2px solid #22aaec;
 }
@@ -704,6 +705,7 @@
 }
 
 .main__center_bigpost-list-about-other-meta {
+  border-top: 1px solid #9fdaf6;
   padding: 0 5px;
   position: relative;
   right: -30px;
@@ -1175,6 +1177,7 @@
   box-shadow: 0 1px 0 0 #469bbf inset;
   background: #076a9b;
   border: 1px solid #045279;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.55);
 }
 
 .footer__top_menu-item:hover a {
