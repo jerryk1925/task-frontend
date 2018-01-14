@@ -767,6 +767,40 @@
   }
 }
 
+.main__center_post_smallpost-effect2 {
+  position: relative;
+}
+
+.main__center_post_smallpost-effect2:before, .main__center_post_smallpost-effect2:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  left: 7px;
+  width: 50%;
+  top: 70%;
+  max-width: 700px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(-2deg);
+}
+
+.main__center_post_smallpost-effect2:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(2deg);
+  right: 10px;
+  left: auto;
+}
+
 .main__center_post_smallpost-top {
   min-height: 184px;
   padding: 26px 30px 26px 30px;
@@ -872,7 +906,7 @@
 
 @media only screen and (max-width: 600px) {
   .main__center_post_smallpost2 {
-    margin-top: 5px;
+    margin-top: 10px;
     width: 100%;
   }
 }
@@ -976,6 +1010,7 @@
   margin-top: 30px;
   min-height: 80px;
   background: #efeeee;
+  width: 100%;
 }
 
 @media only screen and (max-width: 720px) {
@@ -992,6 +1027,40 @@
   font-family: "Arial";
   color: #636363;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+.main__center_post_component-effect {
+  position: relative;
+}
+
+.main__center_post_component-effect:before, .main__center_post_component-effect:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  left: 5px;
+  width: 50%;
+  top: 70%;
+  max-width: 700px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(-0.8deg);
+}
+
+.main__center_post_component-effect:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(0.8deg);
+  right: 10px;
+  left: auto;
 }
 
 .information {
@@ -1095,7 +1164,6 @@
 }
 
 .footer__top_menu-item a {
-  font-weight: bold;
   text-decoration: none;
   font-size: 10px;
   font-family: Arial;
