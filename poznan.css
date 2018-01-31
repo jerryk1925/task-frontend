@@ -96,6 +96,12 @@
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .header__menu_item {
+    margin: 0 4px;
+  }
+}
+
 .header__menu_item a {
   text-decoration: none;
   font-size: 10px;
@@ -302,12 +308,27 @@
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .visit__people_person-comment {
+    padding: 0 2px;
+    padding-top: 5px;
+    width: 80px;
+  }
+}
+
 .visit__people_person-comment-about {
   line-height: 12px;
   font-size: 9px;
   font-family: "Arial";
   color: #515151;
   font-style: italic;
+}
+
+@media only screen and (max-width: 360px) {
+  .visit__people_person-comment-about {
+    line-height: 10px;
+    font-size: 8px;
+  }
 }
 
 .visit__people_person-comment-name {
@@ -330,6 +351,14 @@
     padding: 0 5px;
     padding-top: 5px;
     width: 100px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .visit__people_person-comment4 {
+    padding: 0 2px;
+    padding-top: 5px;
+    width: 80px;
   }
 }
 
@@ -557,6 +586,12 @@
   color: white;
 }
 
+@media only screen and (max-width: 360px) {
+  .main__left_stoke-table th {
+    font-size: 8px;
+  }
+}
+
 .main__left_stoke-table td {
   font-size: 10px;
   font-family: "Arial";
@@ -564,6 +599,12 @@
   width: 39px;
   height: 19px;
   text-align: center;
+}
+
+@media only screen and (max-width: 360px) {
+  .main__left_stoke-table td {
+    font-size: 8px;
+  }
 }
 
 .main__left_stoke-table tr {
